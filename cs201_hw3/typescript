@@ -1,0 +1,48 @@
+Script started on 2020-06-01 19:16:36-0700
+lut@magellanic:~/CS201/Project3/cs201_hw3$ make clean
+rm -f *.o hw3 hw3crc hw3cmov
+lut@magellanic:~/CS201/Project3/cs201_hw3$ make
+gcc -c -g -o hw3.o -ansi -pedantic -O0 -Wall -no-pie -g hw3.c
+gcc -c -g -o crc.o -ansi -pedantic -O0 -Wall -no-pie -g crc.c
+gcc -g -o hw3 -ansi -pedantic -O0 -Wall -no-pie -g hw3.o crc.o
+as --64 -o hw3crc.o hw3crc.s
+gcc -g -o hw3crc -ansi -pedantic -O0 -Wall -no-pie -g hw3crc.o hw3.o
+as --64 -o hw3cmov.o hw3cmov.s
+gcc -g -o hw3cmov -ansi -pedantic -O0 -Wall -no-pie -g hw3cmov.o hw3.o
+lut@magellanic:~/CS201/Project3/cs201_hw3$ ./hw3
+
+Insufficient number of arguments provided.
+Example: ./hw3 message
+(Note, if your message has spaces in it, you may need to surround it in "quotes"!)
+
+
+Exiting.
+
+lut@magellanic:~/CS201/Project3/cs201_hw3$ ./hw3 "Look Chris, I'm writing assembly code!"
+
+Results
+=======
+
+CRC: 66
+Iterations run: 1000000.  Total execution time: 8000 ms.  Time per iteration: 8 us
+
+lut@magellanic:~/CS201/Project3/cs201_hw3$ ./hw3 "Look Chris, I'm writing assembly code!"[C[1@c[1@r[1@c
+
+Results
+=======
+
+CRC: 66
+Iterations run: 1000000.  Total execution time: 6000 ms.  Time per iteration: 6 us
+
+lut@magellanic:~/CS201/Project3/cs201_hw3$ ./hw3crc "Look Chris, I'm writing assembly code!"[1P[1P[1@m[1@o[1@v
+
+Results
+=======
+
+CRC: 66
+Iterations run: 1000000.  Total execution time: 3000 ms.  Time per iteration: 3 us
+
+lut@magellanic:~/CS201/Project3/cs201_hw3$ exit
+exit
+
+Script done on 2020-06-01 19:17:41-0700

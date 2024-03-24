@@ -1,0 +1,25 @@
+Script started on 2020-04-14 21:46:09-0700
+lut@snares:~/CS201/Project1/cs201_a1$ exitstopquit./typing_word_game.c[K[K
+This is a game that tests typing speed.
+Type the following words
+word #1 is fox: foxy
+Incorrect. Try again.
+word #1 is fox: fox   fox
+word #2 is brown: brown
+word #3 is dog: dog
+word #4 is lazy: lazyy
+Incorrect. Try again.
+word #4 is lazy: wow   hi chris
+Incorrect. Try again.
+word #4 is lazy: Incorrect. Try again.
+word #4 is lazy: lazy
+word #5 is The: The
+word #6 is the: the
+word #7 is quick: quick
+word #8 is over: over
+word #9 is jumps: jumps
+Correct! Your time is:  22 seconds 243359 useconds.
+lut@snares:~/CS201/Project1/cs201_a1$ exit
+exit
+
+Script done on 2020-04-14 21:46:37-0700
